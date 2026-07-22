@@ -1,44 +1,41 @@
-# Mentoria Financial Advisor — Leonardo Ces (landing page)
+# Leonardo Ces — Blog de Educação para Financial Advisors
 
-Landing page local, estilo acquisition.com (dark, tipografia pesada, tática), para a
-mentoria de Financial Advisor do Leonardo Ces. 100% offline, sem dependências externas.
+Site pessoal / blog editorial de Leonardo Ces (CEO da IBBRA), com tom de conteúdo e
+autoridade (não de vendas). Paleta clara: branco, bege, azul-marinho, azul e laranja
+como detalhe. 100% offline, sem dependências externas.
 
-## Como abrir (para apresentar ao Leonardo)
+## As 5 frentes de conteúdo
+1. **Trilha do Financial Advisor** — a jornada de carreira, do início ao topo
+2. **Marca Pessoal** — autoridade, posicionamento e reputação
+3. **Carteira & Vendas** — carteira de clientes e processo comercial
+4. **Motivação** — mentalidade, disciplina e constância
+5. **Mentoria Empresarial** — gestão e crescimento do negócio
 
-**Jeito mais simples:** dê **duplo clique em `index.html`**. Abre no navegador padrão e
-funciona totalmente offline (não precisa de internet nem de servidor).
+CTA principal é a **newsletter** (suave); a mentoria é citada de forma discreta.
 
-**Alternativa (servidor local):** rode `serve.ps1` e acesse `http://localhost:8899`:
+## Como abrir
+- **Duplo clique em `index.html`** (abre no navegador, funciona offline), ou
+- `powershell -ExecutionPolicy Bypass -File serve.ps1` → `http://localhost:8899`
 
-```powershell
-powershell -ExecutionPolicy Bypass -File serve.ps1
-```
+## Foto
+`assets/leonardo.jpg` é uma foto pública oficial dele (fonte: matéria da GPS Brasília,
+"Leonardo Ces, o empreendedor da oportunidade"). Usada no hero, no bloco do autor,
+nos avatares dos artigos e no destaque. Para trocar, basta substituir o arquivo.
 
-## Como colocar a foto do Leonardo
+## O que ajustar antes de publicar de verdade
+- **Artigos**: os textos dos cards são exemplos (placeholder). Substituir pelos artigos reais.
+- **Links**: os cards apontam para âncoras; ligar às páginas/posts reais quando existirem.
+- **Newsletter**: o formulário é um mock (só mostra confirmação). Ligar a um serviço
+  (Mailchimp, Beehiiv, RD Station etc.) via `action`/embed antes de publicar.
+- **Números do autor** e bio — confirmar com o Leonardo.
 
-Há dois espaços reservados (placeholders com a letra "L"):
-
-1. **Hero** (topo, card à direita) → salve a foto como `assets/leonardo.jpg` e, no
-   `index.html`, troque o bloco `<div class="photo-slot">…</div>` dentro de
-   `.hero-photo` por:
-   ```html
-   <img src="assets/leonardo.jpg" alt="Leonardo Ces" style="width:100%;height:100%;object-fit:cover">
-   ```
-2. **Seção "Quem vai te mentorar"** → salve como `assets/leonardo-2.jpg` e faça a mesma
-   troca dentro de `.about-photo`.
-
-Dica: use fotos verticais (retrato), boa iluminação, fundo escuro/neutro combina melhor
-com o tema.
-
-## O que ajustar antes de publicar (conteúdo placeholder)
-
-- **Números da barra de stats** (patrimônio, anos, alunos) — confirmar com o Leonardo.
-- **Preço/parcelas** na seção de oferta — hoje estão marcados como *ilustrativos*.
-- **Depoimentos** — trocar pelos casos reais de alunos (hoje há um aviso de "ilustrativos").
-- **Link dos botões de CTA** — apontar para WhatsApp, checkout ou formulário de inscrição.
+## Deploy (GitHub → Vercel)
+Repositório git já inicializado e commitado. Fluxo:
+1. Criar repo **vazio** em github.com/new
+2. `git remote add origin <URL>` e `git push -u origin main`
+3. Em vercel.com/new → Import → selecionar o repo → Framework "Other" → Deploy
 
 ## Estrutura
-
-- `index.html` — a página inteira (HTML + CSS + JS embutidos).
-- `assets/` — coloque aqui as fotos.
-- `serve.ps1` — servidor estático opcional para preview.
+- `index.html` — a página inteira (HTML + CSS + JS embutidos)
+- `assets/leonardo.jpg` — foto do Leonardo
+- `serve.ps1` — servidor estático opcional para preview (ignorado no deploy)
