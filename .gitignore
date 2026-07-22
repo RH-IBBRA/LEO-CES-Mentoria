@@ -1,0 +1,8 @@
+# Sistema / editores
+Thumbs.db
+.DS_Store
+*.log
+
+# Dependências (caso um dia use build)
+node_modules/
+.vercel/
