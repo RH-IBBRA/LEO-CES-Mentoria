@@ -37,6 +37,12 @@ Tudo definido em `assets/style.css` — mexer lá recolore o site inteiro.
   (Mailchimp, Beehiiv, RD Station etc.) via `action`/embed antes de publicar.
 - **Números do autor** e bio — confirmar com o Leonardo.
 
+## Grupo do WhatsApp (botão flutuante + faixa)
+O link do grupo fica em **um único lugar**: a constante `WA_GROUP_URL` no topo de
+`assets/app.js`. Troque a URL placeholder (`https://chat.whatsapp.com/XXXX...`) pelo
+convite real do grupo e o botão flutuante, a faixa ao fim da página e o link do bloco
+do autor passam todos a apontar para lá automaticamente.
+
 ## Deploy (GitHub → Vercel)
 Repositório git já inicializado e commitado. Fluxo:
 1. Criar repo **vazio** em github.com/new
