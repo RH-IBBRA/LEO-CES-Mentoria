@@ -17,10 +17,18 @@ CTA principal é a **newsletter** (suave); a mentoria é citada de forma discret
 - **Duplo clique em `index.html`** (abre no navegador, funciona offline), ou
 - `powershell -ExecutionPolicy Bypass -File serve.ps1` → `http://localhost:8899`
 
-## Foto
-`assets/leonardo.jpg` é uma foto pública oficial dele (fonte: matéria da GPS Brasília,
-"Leonardo Ces, o empreendedor da oportunidade"). Usada no hero, no bloco do autor,
-nos avatares dos artigos e no destaque. Para trocar, basta substituir o arquivo.
+## Identidade visual
+Paleta verde-escuro (#123528) + creme (#f5f0e6) + dourado (#c6a44e), tipografia
+serifada (Playfair Display via Google Fonts, com fallback Georgia para uso offline).
+Tudo definido em `assets/style.css` — mexer lá recolore o site inteiro.
+
+## Fotos
+- `assets/leonardo.jpg` — retrato (terno azul) usado no bloco do autor, nos avatares
+  dos artigos e nos destaques. Fonte: matéria da GPS Brasília.
+- `assets/leonardo-hero.jpg` — **foto do hero** (terno verde, ambiente de biblioteca).
+  **Salve a foto nova nesse caminho exato.** Enquanto o arquivo não existir, o hero
+  usa `leonardo.jpg` automaticamente (fallback via `onerror`). Ideal: imagem larga
+  (paisagem), com o Leonardo à direita do quadro.
 
 ## O que ajustar antes de publicar de verdade
 - **Artigos**: os textos dos cards são exemplos (placeholder). Substituir pelos artigos reais.
