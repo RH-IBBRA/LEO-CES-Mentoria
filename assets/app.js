@@ -33,7 +33,6 @@
   /* ---------- 1. Modo publico esconde as marcacoes ---------- */
   if (!rascunho) {
     document.querySelectorAll('[data-so-rascunho]').forEach(esconder);
-    esconder(document.getElementById('avisoRascunho'));
   }
 
   /* ---------- 2. Canais ---------- */

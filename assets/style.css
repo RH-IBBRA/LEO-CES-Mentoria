@@ -119,7 +119,9 @@ p{max-width:var(--largura-texto)}
   border-bottom:1px solid rgba(217,199,163,.22);
 }
 .topo-in{display:flex;align-items:center;gap:20px;min-height:74px}
-.marca{display:flex;flex-direction:column;text-decoration:none;flex:none;line-height:1.1}
+.marca{display:flex;align-items:center;gap:13px;text-decoration:none;flex:none;line-height:1.1}
+.marca-txt{display:flex;flex-direction:column}
+.marca-simbolo{width:40px;height:40px;flex:none;color:var(--claro-no-escuro)}
 .marca-nome{font-family:var(--fonte-titulo);font-size:23px;font-weight:700;color:var(--claro-no-escuro);letter-spacing:-.01em}
 .marca-assinatura{font-family:var(--fonte-texto);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--areia);margin-top:4px}
 .menu{display:flex;gap:26px;margin-left:auto;align-items:center}
@@ -215,13 +217,6 @@ p{max-width:var(--largura-texto)}
 .rodape-nota p{max-width:none}
 .rodape-nota p + p{margin-top:10px}
 
-/* ---------- Aviso de rascunho (some no modo publico) ---------- */
-.aviso-rascunho{
-  background:var(--areia);color:var(--azul);font-size:14px;
-  padding:10px 0;border-bottom:1px solid var(--linha-2);
-}
-.aviso-rascunho .faixa{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline}
-.aviso-rascunho p{max-width:none}
 
 /* ---------- Responsivo ---------- */
 @media (max-width:980px){

@@ -95,6 +95,17 @@ Pontos em que foi preciso interpretar o briefing — vale a revisão de Leonardo
    curso correspondente.
 5. **O conceito anterior foi arquivado**, não apagado: está em `_arquivo/`, fora do
    deploy, e no histórico do git. Ver `_arquivo/LEIA-ME.md`.
-6. **Newsletter e grupo de WhatsApp foram retirados.** O formulário era simulado e
+6. **Foi desenhado um símbolo (monograma oP)** — pedido em 16/09/2026. O briefing
+   diz que a assinatura provisória é "puramente tipográfica" e que não se deve
+   "tratar como logotipo final"; portanto **isto é proposta, não identidade
+   aprovada**, e cabe a Leonardo e ao futuro trabalho de branding decidir. O
+   conceito: o "o" minúsculo seguido do "P" maiúsculo é o traço distintivo da
+   grafia da marca, e o anel carrega a leitura da visão 360º. Sem seta de lucro,
+   sem gráfico e sem símbolo de dinheiro, que o briefing exclui. Entregue em
+   paths puros (nenhuma fonte instalada é necessária) e editável: para recolorir,
+   basta trocar o valor de `stroke`. Testado de 96px a 16px.
+7. **A faixa de aviso de rascunho no topo foi retirada** a pedido, em 16/09/2026.
+   Os selos "pendente" em cada cartão continuam, assim como o `noindex`.
+8. **Newsletter e grupo de WhatsApp foram retirados.** O formulário era simulado e
    o briefing pede definir destino e tratamento dos dados antes de ativar
    qualquer formulário; a comunidade aberta não está definida.

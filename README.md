@@ -14,8 +14,8 @@ identidade final aprovada. Marco de referência: rascunho em S04.15 (12–18/10/
 O site está em **modo rascunho**, o que significa:
 
 - `<meta name="robots" content="noindex, nofollow">` ativo no `index.html`;
-- uma faixa no topo avisa que é rascunho;
-- tudo que ainda depende de insumo ou validação aparece marcado como **pendente**;
+- tudo que ainda depende de insumo ou validação aparece marcado como **pendente**
+  no próprio cartão (a faixa de aviso no topo foi retirada a pedido);
 - nenhum link externo está ativo, porque nenhum destino foi validado ainda.
 
 As pendências e o checklist de aceite estão em [ACEITE.md](ACEITE.md).
@@ -34,6 +34,9 @@ As pendências e o checklist de aceite estão em [ACEITE.md](ACEITE.md).
 | `assets/style.css` | cores, tipografia e escala — tudo no `:root` no topo |
 | `assets/app.js` | aplica o `config.js` na página; não guarda conteúdo |
 | `assets/leonardo.jpg` | retrato usado na seção "Sobre" |
+| `assets/logo-oplanejador.svg` | **símbolo (monograma oP)** em paths puros, para fundos claros |
+| `assets/logo-oplanejador-claro.svg` | o mesmo símbolo para fundos escuros |
+| `assets/favicon.svg` | símbolo em areia sobre quadrado azul, usado como favicon |
 | `assets/og-oplanejador.svg` | desenho da imagem de compartilhamento (falta exportar em PNG) |
 | `serve.ps1` | servidor local opcional para preview (não vai para o deploy) |
 | `_arquivo/` | conteúdo do conceito anterior, fora do deploy — ver `_arquivo/LEIA-ME.md` |
