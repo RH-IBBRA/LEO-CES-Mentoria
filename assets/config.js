@@ -1,0 +1,102 @@
+/* ============================================================
+   oPlanejador — configuracoes centrais
+   ------------------------------------------------------------
+   Edite SOMENTE este arquivo para: ligar/desligar canais,
+   trocar URLs, cadastrar materiais gratuitos e definir o
+   contato publico. Nao e necessario mexer em HTML ou CSS.
+
+   modo: 'rascunho' -> marca as pendencias na tela, para revisao
+         'publico'  -> esconde tudo que ainda nao tem destino real
+   ============================================================ */
+
+var OP_CONFIG = {
+
+  modo: 'rascunho',
+
+  /* --- Canais -------------------------------------------------
+     confirmado: false -> o cartao aparece sem botao ativo (e,
+                          no modo 'publico', nao aparece)
+     confirmado: true  -> o botao passa a levar para a url
+
+     Handles informados por Leonardo em 08/09/2026. As URLs
+     abaixo foram derivadas desses handles e AINDA NAO foram
+     validadas — conferir o destino antes de confirmar.
+  ------------------------------------------------------------ */
+  canais: {
+    youtube: {
+      url: 'https://www.youtube.com/@leonardoces',
+      confirmado: false,
+      nota: 'Handle @leonardoces informado em 08/09/2026. Validar o destino e se já existem aulas publicadas.'
+    },
+    instagram: {
+      url: 'https://www.instagram.com/leonardoibbra',
+      confirmado: false,
+      nota: 'Perfil atual @leonardoibbra. A padronização do @ é recomendação, não decisão confirmada.'
+    },
+    podcast: {
+      url: '',
+      confirmado: false,
+      nota: 'Sem endereço definido. Podcast previsto a partir da S10.'
+    }
+  },
+
+  /* Canais de expansao: entram no rodape apenas quando confirmados. */
+  expansao: {
+    linkedin: {
+      rotulo: 'LinkedIn',
+      url: '',
+      confirmado: false,
+      nota: 'Handle @leonardoces informado, mas a URL do LinkedIn não é derivável do @ — precisa ser conferida.'
+    },
+    x: {
+      rotulo: 'X',
+      url: 'https://x.com/leonardoces',
+      confirmado: false,
+      nota: 'Handle informado em 08/09/2026; validar destino.'
+    },
+    tiktok: {
+      rotulo: 'TikTok',
+      url: 'https://www.tiktok.com/@leonardo.ces8',
+      confirmado: false,
+      nota: 'Handle informado em 08/09/2026; validar destino.'
+    }
+  },
+
+  /* --- Contato publico ---------------------------------------
+     Preencher com o e-mail que Leonardo definir para o projeto.
+     O WhatsApp de operacao dos agentes NAO entra aqui: e uma
+     funcao interna, nao atendimento ao publico.
+  ------------------------------------------------------------ */
+  contato: {
+    email: '',
+    nota: 'E-mail público do projeto ainda não fornecido.'
+  },
+
+  /* --- Fotos -------------------------------------------------
+     hero: '' mantem a abertura tipografica, sem foto.
+     Usar somente fotografia real de Leonardo, com origem e
+     permissao de uso registradas. Nao usar banco de imagens.
+  ------------------------------------------------------------ */
+  fotos: {
+    hero: '',
+    heroAlt: 'Leonardo Ces',
+    retrato: 'assets/leonardo.jpg',
+    retratoAlt: 'Leonardo Ces',
+    retratoNota: 'Origem: matéria da GPS Brasília. Permissão de uso ainda não registrada; substituir por foto autorizada.'
+  },
+
+  /* --- Materiais gratuitos -----------------------------------
+     Cadastrar somente o que ja existe como arquivo real.
+     Modelo de cada item:
+     {
+       titulo:   'Nome real do material',
+       problema: 'Que problema ele ajuda a resolver',
+       formato:  'PDF, 4 paginas',
+       aula:     'Aula relacionada',
+       url:      'materiais/arquivo.pdf'
+     }
+     Lista vazia: no modo 'rascunho' aparecem espacos marcados
+     como pendentes; no modo 'publico' a secao fica oculta.
+  ------------------------------------------------------------ */
+  materiais: []
+};

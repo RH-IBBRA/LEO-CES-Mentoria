@@ -3,266 +3,297 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Leonardo Ces — Educação para Financial Advisors</title>
-<meta name="description" content="Conteúdo e educação para quem leva a assessoria de patrimônio a sério. Por Leonardo Ces, CEO da IBBRA. Trilha do Financial Advisor, marca pessoal, carteira e vendas, motivação e mentoria empresarial." />
+
+<title>oPlanejador | Formação e evolução de Financial Advisors</title>
+<meta name="description" content="Conteúdos com Leonardo Ces sobre Consultoria Financeira e Patrimonial 360º, prática profissional e desenvolvimento do negócio." />
+
+<!-- RASCUNHO: a linha abaixo mantém o site fora dos buscadores.
+     Remover somente na publicação da versão aprovada. -->
+<meta name="robots" content="noindex, nofollow" />
+
+<meta name="theme-color" content="#142D3D" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:site_name" content="oPlanejador" />
+<meta property="og:title" content="oPlanejador | Formação e evolução de Financial Advisors" />
+<meta property="og:description" content="Conteúdos com Leonardo Ces sobre Consultoria Financeira e Patrimonial 360º, prática profissional e desenvolvimento do negócio." />
+<meta property="og:url" content="https://oplanejador.com/" />
+<!-- PENDENTE: imagem de compartilhamento. O desenho está em
+     assets/og-oplanejador.svg e precisa ser exportado em PNG
+     1200x630 antes de publicar. Então descomentar:
+<meta property="og:image" content="https://oplanejador.com/assets/og-oplanejador.png" />
+<meta name="twitter:card" content="summary_large_image" />
+-->
+
 <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
 
-<!-- NAV -->
-<header class="nav">
-  <div class="wrap nav-in">
-    <a href="index.html" class="brand">
-      <span class="mono">L</span>
-      <span>LEONARDO CES<small>Educação para Advisors</small></span>
+<a class="pular" href="#conteudo">Ir para o conteúdo</a>
+
+<!-- Aviso de rascunho: escondido automaticamente quando
+     OP_CONFIG.modo virar 'publico' em assets/config.js -->
+<div class="aviso-rascunho" id="avisoRascunho" role="note">
+  <div class="faixa">
+    <p><b>Rascunho interno.</b> Identidade, textos e links são proposta inicial, sem aprovação de publicação. As marcações <b>pendente</b> mostram o que ainda depende de insumo ou validação.</p>
+  </div>
+</div>
+
+<header class="topo">
+  <div class="faixa topo-in">
+    <a class="marca" href="#abertura">
+      <span class="marca-nome">oPlanejador</span>
+      <span class="marca-assinatura">com Leonardo Ces</span>
     </a>
-    <nav class="nav-links">
-      <a href="categorias/trilha.html">Trilha do Advisor</a>
-      <a href="categorias/marca.html">Marca Pessoal</a>
-      <a href="categorias/carteira.html">Carteira &amp; Vendas</a>
-      <a href="categorias/motivacao.html">Motivação</a>
-      <a href="categorias/empresa.html">Mentoria Empresarial</a>
+
+    <button class="abre-menu" id="abreMenu" aria-expanded="false" aria-controls="menuPrincipal">Menu</button>
+
+    <nav class="menu" id="menuPrincipal" aria-label="Navegação principal">
+      <a href="#para-quem">Para quem é</a>
+      <a href="#conteudos">Conteúdos</a>
+      <a href="#materiais">Materiais</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
     </nav>
-    <a href="#newsletter" class="btn btn-primary" style="flex:none">Newsletter</a>
-    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+
+    <!-- Botão principal do cabeçalho: só aparece quando o canal
+         de aulas tiver destino confirmado em assets/config.js -->
+    <a class="botao botao-principal" id="ctaAulas" href="#conteudos" hidden>Ver aulas</a>
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero on-dark" id="top">
-  <div class="wrap hero-grid">
-    <div class="hero-copy reveal in">
-      <span class="eyebrow">Educação para Financial Advisors</span>
-      <h1>Conteúdo para quem leva a assessoria de patrimônio <span class="accent">a sério.</span></h1>
-      <p class="lead">Ideias práticas sobre carreira, marca pessoal, carteira de clientes, mentalidade e gestão — escritas por quem constrói e opera um Full Family Office todos os dias.</p>
-      <div class="hero-actions">
-        <a href="#frentes" class="btn btn-primary">Explorar conteúdos</a>
-        <a href="#newsletter" class="btn btn-ghost">Receber por e-mail</a>
+<main id="conteudo">
+
+<!-- ABERTURA -->
+<section class="hero escuro" id="abertura">
+  <div class="faixa hero-grade">
+    <div>
+      <span class="regua" aria-hidden="true"></span>
+      <h1>Conhecimento para construir e desenvolver sua atuação como Financial Advisor.</h1>
+      <p class="hero-texto">Aprenda sobre Consultoria Financeira e Patrimonial 360º, desenvolvimento do negócio e qualidade no acompanhamento de clientes, com a experiência de Leonardo Ces.</p>
+      <div class="hero-acoes">
+        <a class="botao botao-principal" href="#conteudos">Explorar conteúdos</a>
+        <a class="botao botao-secundario" href="#sobre">Conhecer o projeto</a>
       </div>
     </div>
-
-    <div class="hero-side reveal in">
-      <figure class="hero-quote">
-        <span class="mark">&ldquo;</span>
-        <p>Ensinar é a forma mais eficiente de multiplicar impacto.</p>
-      </figure>
-    </div>
-  </div>
-  <div class="hero-photo">
-    <img src="assets/leonardo-hero.jpg" alt="Leonardo Ces, CEO da IBBRA" onerror="this.onerror=null;this.src='assets/leonardo.jpg'" />
+    <!-- Foto da abertura: aparece quando OP_CONFIG.fotos.hero
+         for preenchido com uma imagem autorizada de Leonardo. -->
+    <figure class="hero-foto" id="heroFoto" hidden>
+      <img id="heroFotoImg" src="" alt="" />
+    </figure>
   </div>
 </section>
 
-<!-- FRENTES / PILARES -->
-<section id="frentes">
-  <div class="wrap">
-    <div class="sec-head center reveal">
-      <span class="eyebrow">As 5 frentes de conteúdo</span>
-      <h2 class="h-lg">Cinco caminhos, um objetivo:<br>te tornar um <span class="accent">Financial Advisor completo.</span></h2>
-      <p>Cada frente é uma seção com seus próprios artigos. Escolha por onde começar.</p>
+<!-- PARA QUEM É -->
+<section id="para-quem">
+  <div class="faixa">
+    <div class="abertura-secao">
+      <span class="rotulo">Para quem é</span>
+      <h2>Diferentes pontos de partida. Uma profissão para desenvolver.</h2>
+      <p>O conteúdo acompanha quem está conhecendo a profissão, planejando uma transição ou buscando evoluir na prática.</p>
     </div>
-    <div class="frentes">
-      <a href="categorias/trilha.html" class="frente reveal">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6.5 8-6.5s8 2.5 8 6.5"/></svg></div>
-        <span class="kick">01.</span>
-        <h3>Carreira &amp; Mentalidade</h3>
-        <p>Reflexões e estratégias para crescer como advisor e líder, do início ao topo da trilha.</p>
-        <span class="go">→</span>
-      </a>
-      <a href="categorias/marca.html" class="frente reveal">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/></svg></div>
-        <span class="kick">02.</span>
-        <h3>Marca Pessoal</h3>
-        <p>Posicionamento, comunicação e reputação no mercado para atrair o cliente ideal.</p>
-        <span class="go">→</span>
-      </a>
-      <a href="categorias/carteira.html" class="frente reveal">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/></svg></div>
-        <span class="kick">03.</span>
-        <h3>Carteira &amp; Clientes</h3>
-        <p>Construção de carteira, relacionamento e processo comercial para escalar com consistência.</p>
-        <span class="go">→</span>
-      </a>
-      <a href="categorias/empresa.html" class="frente reveal">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20V11"/><path d="M12 20V4"/><path d="M19 20v-6"/></svg></div>
-        <span class="kick">04.</span>
-        <h3>Gestão &amp; Negócios</h3>
-        <p>Processos, times e sistemas para transformar o assessor solo em um escritório eficiente.</p>
-        <span class="go">→</span>
-      </a>
-      <a href="categorias/motivacao.html" class="frente reveal">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2.2 5.3-5.3 2.2 2.2-5.3z"/></svg></div>
-        <span class="kick">05.</span>
-        <h3>Motivação &amp; Performance</h3>
-        <p>Disciplina, foco e mentalidade para alta performance sustentável no longo prazo.</p>
-        <span class="go">→</span>
-      </a>
+
+    <div class="grade grade-4">
+      <article class="cartao">
+        <span class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h5v18h-5"/><path d="M4 12h9"/><path d="M9.5 8.5 13 12l-3.5 3.5"/></svg></span>
+        <h3>Quero entrar na profissão</h3>
+        <p>Entenda a atividade e organize seus primeiros passos, aproveitando as experiências e relações que você já construiu.</p>
+      </article>
+
+      <article class="cartao">
+        <span class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-7"/><path d="M12 14c0-3 2.2-5 5-5 0 3-2.2 5-5 5z"/><path d="M12 14c0-3-2.2-5-5-5 0 3 2.2 5 5 5z"/></svg></span>
+        <h3>Tenho interesse e estou começando do zero</h3>
+        <p>Conheça os fundamentos e desenvolva repertório para começar, mesmo sem experiência ou rede prévia.</p>
+      </article>
+
+      <article class="cartao">
+        <span class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 13.6-5.7"/><path d="M20 12a8 8 0 0 1-13.6 5.7"/><path d="M18 2.8V7h-4.2"/><path d="M6 21.2V17h4.2"/></svg></span>
+        <h3>Quero mudar meu modelo de atuação</h3>
+        <p>Explore uma atuação orientada ao serviço e ao acompanhamento, remunerada pelo cliente.</p>
+      </article>
+
+      <article class="cartao">
+        <span class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21v-5h4v5"/><path d="M10 21V11h4v10"/><path d="M15 21V6h4v15"/></svg></span>
+        <h3>Já sou FA e quero evoluir</h3>
+        <p>Aprofunde sua prática, melhore processos e desenvolva seu negócio.</p>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- DESTAQUE -->
-<section class="bege">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="eyebrow">Leitura em destaque</span>
-      <h2 class="h-lg">Comece por aqui</h2>
+<!-- PILARES DE APRENDIZAGEM -->
+<section class="fundo-alt" id="pilares">
+  <div class="faixa">
+    <div class="abertura-secao">
+      <span class="rotulo">Pilares de aprendizagem</span>
+      <h2>A profissão exige mais do que conhecimento sobre investimentos.</h2>
     </div>
-    <a class="featured reveal" href="artigos/trilha-do-financial-advisor.html">
-      <div class="fthumb">🧭</div>
-      <div class="fbody">
-        <span class="cat c-trilha">Trilha do Financial Advisor</span>
-        <h2>A trilha completa do Financial Advisor: o mapa dos próximos 10 anos da sua carreira</h2>
-        <p>Onde você está hoje, para onde o mercado está indo e as decisões que separam quem estaciona de quem chega ao topo da assessoria de patrimônio. Um panorama honesto — sem atalhos mágicos.</p>
-        <div class="meta">
-          <img src="assets/leonardo.jpg" alt="Leonardo Ces" />
-          <span>Leonardo Ces</span><span class="dot"></span><span>12 min de leitura</span>
+
+    <div class="grade grade-3">
+      <article class="cartao">
+        <span class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 5.5v15"/><path d="M9 8h7"/><path d="M9 12h7"/></svg></span>
+        <h3>Capacidade técnica</h3>
+        <p>Conecte finanças, planejamento e questões patrimoniais para compreender melhor a realidade de cada cliente.</p>
+      </article>
+
+      <article class="cartao">
+        <span class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><rect x="4" y="12" width="6" height="9" rx="1"/><rect x="14" y="5" width="6" height="16" rx="1"/><path d="M7 16h0"/><path d="M17 9h0"/></svg></span>
+        <h3>Desenvolvimento do negócio</h3>
+        <p>Aprenda a comunicar seu serviço, organizar processos e construir uma atuação sustentável.</p>
+      </article>
+
+      <article class="cartao">
+        <span class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 20.5c0-3.6 3.1-6.5 7-6.5s7 2.9 7 6.5"/></svg></span>
+        <h3>Desenvolvimento pessoal e profissional</h3>
+        <p>Desenvolva comunicação, relacionamento e preparo para os desafios da profissão.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTEÚDOS / CANAIS -->
+<section id="conteudos">
+  <div class="faixa">
+    <div class="abertura-secao">
+      <span class="rotulo">Conteúdos</span>
+      <h2>Escolha como continuar aprendendo.</h2>
+    </div>
+
+    <div class="grade grade-3" id="canais">
+      <article class="cartao" data-canal="youtube">
+        <span class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="4"/><path d="M10.8 9.3 15 12l-4.2 2.7z"/></svg></span>
+        <h3>YouTube</h3>
+        <p>Aulas completas, exemplos e aplicações para o dia a dia do Financial Advisor.</p>
+        <div class="acao">
+          <a class="botao botao-secundario" data-canal-link hidden>Ver aulas no YouTube</a>
+          <p class="pendencia" data-canal-pendencia><span class="selo">Pendente</span> <span data-canal-nota>Link a confirmar antes de publicar.</span></p>
         </div>
-      </div>
-    </a>
+      </article>
+
+      <article class="cartao" data-canal="instagram">
+        <span class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17 7h0"/></svg></span>
+        <h3>Instagram</h3>
+        <p>Ideias, bastidores e reflexões para acompanhar o desenvolvimento da profissão.</p>
+        <div class="acao">
+          <a class="botao botao-secundario" data-canal-link hidden>Acompanhar no Instagram</a>
+          <p class="pendencia" data-canal-pendencia><span class="selo">Pendente</span> <span data-canal-nota>Link a confirmar antes de publicar.</span></p>
+        </div>
+      </article>
+
+      <article class="cartao" data-canal="podcast">
+        <span class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0"/><path d="M12 18v3"/><path d="M8.5 21h7"/></svg></span>
+        <h3>Podcast</h3>
+        <p>Conversas e experiências para aprofundar os desafios da prática profissional.</p>
+        <div class="acao">
+          <a class="botao botao-secundario" data-canal-link hidden>Ouvir o podcast</a>
+          <p class="pendencia" data-canal-pendencia><span class="selo">Pendente</span> <span data-canal-nota>Link a confirmar antes de publicar.</span></p>
+        </div>
+      </article>
+    </div>
   </div>
 </section>
 
-<!-- ÚLTIMOS ARTIGOS -->
-<section id="artigos">
-  <div class="wrap">
-    <div class="sec-top reveal">
+<!-- MATERIAIS GRATUITOS -->
+<section class="fundo-alt" id="materiais">
+  <div class="faixa">
+    <div class="abertura-secao">
+      <span class="rotulo">Materiais gratuitos</span>
+      <h2>Transforme conhecimento em aplicação.</h2>
+      <p>Encontre materiais de apoio conectados às aulas para organizar ideias e aplicar o que aprendeu.</p>
+    </div>
+
+    <!-- Enquanto OP_CONFIG.materiais estiver vazio, aparecem os espaços
+         abaixo com o modelo do cartão. Ao cadastrar materiais reais em
+         assets/config.js, eles substituem estes espaços. No modo
+         'publico' sem material real, a seção inteira fica oculta. -->
+    <div class="grade grade-3" id="listaMateriais">
+      <article class="cartao cartao-pendente" data-material-modelo>
+        <span class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg></span>
+        <h3>Espaço reservado para material</h3>
+        <p class="campo-modelo"><b>Título real</b> do material, o <b>problema</b> que ele ajuda a resolver, o <b>formato</b>, a <b>aula relacionada</b> e o botão “Acessar material”.</p>
+        <div class="acao">
+          <p class="pendencia"><span class="selo">Pendente</span> Arquivo ainda não produzido. Acesso direto, sem formulário obrigatório.</p>
+        </div>
+      </article>
+
+      <article class="cartao cartao-pendente" data-material-modelo>
+        <span class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg></span>
+        <h3>Espaço reservado para material</h3>
+        <p class="campo-modelo">O primeiro material deve ter utilidade prática e estar vinculado a uma aula.</p>
+        <div class="acao">
+          <p class="pendencia"><span class="selo">Pendente</span> Arquivo ainda não produzido.</p>
+        </div>
+      </article>
+
+      <article class="cartao cartao-pendente" data-material-modelo>
+        <span class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg></span>
+        <h3>Espaço reservado para material</h3>
+        <p class="campo-modelo">Nada é prometido aqui antes de existir como arquivo.</p>
+        <div class="acao">
+          <p class="pendencia"><span class="selo">Pendente</span> Arquivo ainda não produzido.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE LEONARDO -->
+<section id="sobre">
+  <div class="faixa sobre-grade">
+    <figure class="sobre-foto" id="sobreFoto">
+      <img id="sobreFotoImg" src="assets/leonardo.jpg" alt="Leonardo Ces" width="2976" height="4464" loading="lazy" decoding="async" />
+    </figure>
+
+    <div class="sobre-texto">
+      <span class="rotulo">Sobre Leonardo</span>
+      <h2>Experiência prática, compartilhada.</h2>
+      <p>Sou Leonardo Ces. Compartilho aprendizados de 15 anos de experiência em planejamento patrimonial e na construção da IBBRA para apoiar a formação e a evolução de Financial Advisors. No oPlanejador, essa experiência se transforma em conteúdo sobre a prática profissional, o desenvolvimento do negócio e o acompanhamento de clientes.</p>
+      <p class="pendencia" data-so-rascunho><span class="selo">Pendente</span> Biografia a ser revisada por Leonardo antes da publicação. Certificações, cargos, números de clientes e resultados não foram acrescentados por não constarem nas referências.</p>
+      <p class="pendencia" data-so-rascunho><span class="selo">Pendente</span> Fotografia: origem é matéria da GPS Brasília e a permissão de uso ainda não está registrada. Substituir por foto autorizada.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="fundo-alt" id="contato">
+  <div class="faixa">
+    <div class="abertura-secao">
+      <span class="rotulo">Contato</span>
+      <h2>Vamos conversar sobre o projeto.</h2>
+    </div>
+
+    <div class="contato-caixa">
+      <p>Para assuntos relacionados ao oPlanejador, utilize o contato abaixo.</p>
+      <a class="botao botao-principal" id="contatoLink" href="#" hidden>Enviar e-mail</a>
+      <p class="pendencia" id="contatoPendencia" data-so-rascunho><span class="selo">Pendente</span> E-mail público do projeto ainda não definido. O WhatsApp de operação interna não entra aqui.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="rodape">
+  <div class="faixa">
+    <div class="rodape-grade">
       <div>
-        <span class="eyebrow">Publicações recentes</span>
-        <h2 class="h-lg">Últimos artigos</h2>
+        <p class="marca-nome">oPlanejador</p>
+        <p class="marca-assinatura">com Leonardo Ces</p>
       </div>
-      <a href="#frentes" class="link-more">Ver todas as frentes →</a>
+      <nav class="rodape-links" id="rodapeLinks" aria-label="Canais e contato"></nav>
     </div>
-    <div class="posts">
-      <a class="post reveal" href="artigos/os-5-estagios-da-carreira.html">
-        <div class="thumb t-navy">🧭</div>
-        <div class="body">
-          <span class="cat c-trilha">Trilha do Advisor</span>
-          <h3>Os 5 estágios da carreira de um Financial Advisor (e onde a maioria trava)</h3>
-          <p>Da largada à consolidação: um mapa realista do caminho — e o erro típico que prende o profissional em cada fase.</p>
-          <div class="meta"><img src="assets/leonardo.jpg" alt="Leonardo Ces" /><span>Leonardo Ces</span><span class="dot"></span><span>8 min</span></div>
-        </div>
-      </a>
 
-      <a class="post reveal" href="artigos/marca-pessoal.html">
-        <div class="thumb t-blue">✦</div>
-        <div class="body">
-          <span class="cat c-marca">Marca Pessoal</span>
-          <h3>Marca pessoal para assessor: por que o cliente ainda não te procura</h3>
-          <p>Autoridade não é aparecer mais — é ser lembrado pelo motivo certo. Por onde começar sem parecer vendedor.</p>
-          <div class="meta"><img src="assets/leonardo.jpg" alt="Leonardo Ces" /><span>Leonardo Ces</span><span class="dot"></span><span>6 min</span></div>
-        </div>
-      </a>
+    <p class="pendencia" id="rodapePendencia" data-so-rascunho style="margin-top:26px"><span class="selo">Pendente</span> Os links dos canais aparecem aqui conforme forem confirmados em <code>assets/config.js</code>.</p>
 
-      <a class="post reveal" href="artigos/carteira-e-vendas.html">
-        <div class="thumb t-deep">📈</div>
-        <div class="body">
-          <span class="cat c-carteira">Carteira &amp; Vendas</span>
-          <h3>Como montar sua primeira carteira de clientes sem depender de indicação</h3>
-          <p>Um processo de prospecção que não queima a sua reputação — e ainda constrói relacionamento e recorrência.</p>
-          <div class="meta"><img src="assets/leonardo.jpg" alt="Leonardo Ces" /><span>Leonardo Ces</span><span class="dot"></span><span>9 min</span></div>
-        </div>
-      </a>
-
-      <a class="post reveal" href="artigos/motivacao.html">
-        <div class="thumb t-orange">🔥</div>
-        <div class="body">
-          <span class="cat c-motiv">Motivação</span>
-          <h3>Disciplina vence talento: a rotina de um advisor de alta performance</h3>
-          <p>O que separa quem cresce de quem estaciona raramente é técnica. Quase sempre é constância no invisível.</p>
-          <div class="meta"><img src="assets/leonardo.jpg" alt="Leonardo Ces" /><span>Leonardo Ces</span><span class="dot"></span><span>5 min</span></div>
-        </div>
-      </a>
-
-      <a class="post reveal" href="artigos/mentoria-empresarial.html">
-        <div class="thumb t-navy">🏢</div>
-        <div class="body">
-          <span class="cat c-empresa">Mentoria Empresarial</span>
-          <h3>Do assessor solo ao escritório: quando (e como) montar seu time</h3>
-          <p>Os sinais de que chegou a hora de escalar — e como não quebrar a operação no meio do caminho.</p>
-          <div class="meta"><img src="assets/leonardo.jpg" alt="Leonardo Ces" /><span>Leonardo Ces</span><span class="dot"></span><span>7 min</span></div>
-        </div>
-      </a>
-
-      <a class="post reveal" href="artigos/reuniao-de-diagnostico.html">
-        <div class="thumb t-deep">🤝</div>
-        <div class="body">
-          <span class="cat c-carteira">Carteira &amp; Vendas</span>
-          <h3>A reunião de diagnóstico que fecha clientes de alto patrimônio</h3>
-          <p>Menos pitch, mais escuta. O roteiro que transforma a primeira conversa em confiança — e em contrato.</p>
-          <div class="meta"><img src="assets/leonardo.jpg" alt="Leonardo Ces" /><span>Leonardo Ces</span><span class="dot"></span><span>10 min</span></div>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- AUTOR -->
-<section class="pale" id="sobre">
-  <div class="wrap author">
-    <div class="reveal">
-      <div class="author-photo"><img src="assets/leonardo.jpg" alt="Leonardo Ces, CEO da IBBRA" /></div>
-    </div>
-    <div class="reveal">
-      <span class="eyebrow">Quem escreve</span>
-      <h2 class="h-lg" style="margin:14px 0 16px">Leonardo Ces</h2>
-      <p class="lead">CEO e fundador da <b style="color:var(--navy)">IBBRA — Full Family Office</b>, engenheiro de formação e MBA em Finanças pela FGV. Há mais de uma década estrutura o patrimônio de famílias de alto padrão e forma assessores para atuarem como verdadeiros Financial Advisors.</p>
-      <ul>
-        <li>Fundador de um Full Family Office em operação — conteúdo que nasce da prática, não da teoria.</li>
-        <li>MBA em Finance &amp; Financial Management Services pela Fundação Getulio Vargas (FGV).</li>
-        <li>Escreve sobre carreira, marca pessoal, vendas, mentalidade e gestão para assessores.</li>
-      </ul>
-      <div class="mentoria-note">
-        Quer trocar ideias e receber os conteúdos em primeira mão? <a href="#" data-wa>Entre no grupo do WhatsApp</a> e participe da comunidade de Financial Advisors.
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- NEWSLETTER -->
-<section class="news on-dark" id="newsletter">
-  <div class="wrap">
-    <span class="eyebrow" style="justify-content:center">Newsletter</span>
-    <h2 class="h-lg" style="margin-top:14px">Um e-mail por semana. Zero enrolação.</h2>
-    <p>Os melhores conteúdos das cinco frentes — trilha, marca pessoal, carteira, motivação e gestão — direto na sua caixa de entrada.</p>
-    <form class="nform" id="nform">
-      <input type="email" id="nemail" placeholder="Seu melhor e-mail" required />
-      <button type="submit">Quero receber</button>
-    </form>
-    <div class="ok" id="nok">Pronto! Você está na lista. 👋</div>
-    <small>Sem spam. Você pode sair quando quiser.</small>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <div class="brand"><span class="mono">L</span><span>LEONARDO CES<small>Educação para Advisors</small></span></div>
-        <p>Educação prática para Financial Advisors, por quem constrói e opera um Full Family Office todos os dias.</p>
-      </div>
-      <div class="foot-col">
-        <h4>Frentes</h4>
-        <a href="categorias/trilha.html">Trilha do Advisor</a>
-        <a href="categorias/marca.html">Marca Pessoal</a>
-        <a href="categorias/carteira.html">Carteira &amp; Vendas</a>
-        <a href="categorias/motivacao.html">Motivação</a>
-        <a href="categorias/empresa.html">Mentoria Empresarial</a>
-      </div>
-      <div class="foot-col">
-        <h4>Mais</h4>
-        <a href="#sobre">Sobre o autor</a>
-        <a href="#artigos">Últimos artigos</a>
-        <a href="#newsletter">Newsletter</a>
-      </div>
-    </div>
-    <div class="foot-bottom">
-      © 2026 Leonardo Ces · Conteúdo educacional. Este é um espaço pessoal de Leonardo Ces e não constitui oferta pública de valores mobiliários nem recomendação personalizada de investimento. As opiniões são de caráter educativo e não substituem a análise do seu contexto individual.
+    <div class="rodape-nota">
+      <p>Conteúdo educacional sobre a atuação profissional do Financial Advisor. Não constitui recomendação de investimento nem promessa de resultado, renda ou carreira.</p>
+      <p>oPlanejador é o projeto pessoal de Leonardo Ces e tem identidade própria em relação à IBBRA.</p>
+      <p>Este site não possui formulários e não coleta dados pessoais dos visitantes.</p>
+      <p>© 2026 Leonardo Ces</p>
     </div>
   </div>
 </footer>
 
+<script src="assets/config.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>

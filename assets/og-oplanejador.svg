@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Imagem de compartilhamento (rascunho tipografico, sem foto).
+     Exportar em PNG 1200x630 como assets/og-oplanejador.png e
+     descomentar as metatags og:image / twitter:card no index.html. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="oPlanejador, com Leonardo Ces">
+  <rect width="1200" height="630" fill="#142D3D"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#D9C7A3"/>
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#F2EFE8">
+    <text x="88" y="196" font-size="72" font-weight="700">oPlanejador</text>
+    <text x="88" y="360" font-size="42" font-weight="700">Formação e evolução de</text>
+    <text x="88" y="414" font-size="42" font-weight="700">Financial Advisors</text>
+  </g>
+  <rect x="88" y="240" width="72" height="4" fill="#D9C7A3"/>
+  <text x="88" y="508" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="3.4" fill="#D9C7A3">COM LEONARDO CES</text>
+</svg>
