@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- oPlanejador — simbolo. PROPOSTA, nao identidade final.
-     Construcao: um "P" na gramatica de um simbolo monetario, cortado por
-     duas barras (como em P e P). Haste grossa (11), bojo mais leve (9) para
-     dar modulacao tipografica, serifa no topo a esquerda conversando com a
-     Georgia da assinatura, e as duas barras fazendo tambem o pe da letra.
+<!-- oPlanejador — simbolo principal. PROPOSTA, nao identidade final.
+     Construcao: um "P" na gramatica de um simbolo monetario (cortado por
+     duas barras, como em P e P), no centro de um anel interrompido em tres
+     arcos com um no na ponta de cada um. Leitura: o planejador no centro
+     articulando; os nos sao os especialistas; o anel e a visao 360o, aberto
+     porque o acompanhamento continua em vez de fechar um ciclo.
+     Haste grossa (11) e bojo mais leve (9) para dar modulacao tipografica.
      Paths puros: nao depende de nenhuma fonte instalada.
-     Versao para fundos ESCUROS. Para recolorir, troque o "stroke" do grupo. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="56" height="86" viewBox="16 4 56 86" role="img" aria-label="oPlanejador">
-  <g fill="none" stroke="#F2EFE8" stroke-linecap="butt">
+     Em tamanhos pequenos (favicon, atalho) usar logo-oplanejador-reduzido.svg,
+     porque o anel vira borrao abaixo de ~30px.
+     Versao para fundos ESCUROS. Para recolorir, troque os "stroke"/"fill". -->
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" role="img" aria-label="oPlanejador">
+  <g fill="none" stroke="#F2EFE8" stroke-width="5.5" stroke-linecap="butt">
+    <path d="M26.6 82.8A38 38 0 0 1 24.1 24.6"/>
+    <path d="M41.1 13.1A38 38 0 0 1 84.3 36.9"/>
+    <path d="M85.2 59.3A38 38 0 0 1 43.4 87.6"/>
+  </g>
+  <g fill="#F2EFE8">
+    <circle cx="24.1" cy="24.6" r="7"/>
+    <circle cx="84.3" cy="36.9" r="7"/>
+    <circle cx="43.4" cy="87.6" r="7"/>
+  </g>
+  <g fill="none" stroke="#F2EFE8" stroke-linecap="butt" transform="translate(24.7 23.05) scale(0.55)">
     <path d="M40 9V86" stroke-width="11"/>
-    <path d="M25 9h16" stroke-width="8"/>
     <path d="M45.5 14a21 21 0 0 1 0 40" stroke-width="9"/>
     <path d="M21 70h40M21 85h40" stroke-width="8"/>
   </g>

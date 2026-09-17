@@ -107,13 +107,19 @@ Pontos em que foi preciso interpretar o briefing — vale a revisão de Leonardo
    proposta, não identidade aprovada**, e cabe a Leonardo e ao trabalho de
    branding decidir.
 
-   A construção atual, escolhida por Marcelo entre várias: um "P" na gramática de
-   um símbolo monetário, cortado por duas barras, como se constroem ₱ e ₽. Haste
-   grossa e bojo mais leve, para ter modulação tipográfica; serifa no topo à
-   esquerda, conversando com a Georgia da assinatura; e as duas barras fazendo
-   também o pé da letra. Uma variante com anel, que carrega a leitura de visão
-   360º, é usada na imagem de compartilhamento, onde há espaço — no favicon ela
-   não serve, porque anel mais letra viram borrão a 16px.
+   A construção atual, escolhida por Marcelo entre várias tentativas, tem duas
+   partes. A letra: um "P" na gramática de um símbolo monetário, cortado por duas
+   barras, como se constroem ₱ e ₽, com haste grossa e bojo mais leve para ter
+   modulação tipográfica, e as barras fazendo também o pé da letra. Em volta: um
+   anel interrompido em três arcos, com um nó na ponta de cada um. A leitura é o
+   planejador no centro articulando, os nós como os especialistas que ele coordena,
+   e o anel como a visão 360º — aberto, porque o acompanhamento continua em vez de
+   fechar um ciclo.
+
+   **O sistema tem duas versões, de propósito:** o símbolo completo para cabeçalho,
+   rodapé, imagem de compartilhamento e qualquer uso grande; e a versão reduzida,
+   só a letra, para favicon, atalho e usos abaixo de ~30px, onde o anel perde
+   definição e vira borrão. Medido, não suposto.
 
    **Ressalva de conteúdo, registrada de propósito:** o briefing pede para evitar
    "dinheiro em destaque" nas peças, e o posicionamento do projeto é o oposto de

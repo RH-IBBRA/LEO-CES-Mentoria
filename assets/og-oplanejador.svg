@@ -11,11 +11,19 @@
     <text x="88" y="414" font-size="42" font-weight="700">Financial Advisors</text>
   </g>
   <rect x="88" y="240" width="72" height="4" fill="#D9C7A3"/>
-  <g fill="none" stroke="#D9C7A3" stroke-linecap="butt" transform="translate(925 128) scale(1.5)">
-    <circle cx="50" cy="50" r="44" stroke-width="6"/>
-    <g transform="translate(21.5 26) scale(0.58)">
+  <g transform="translate(925 128) scale(1.5)">
+    <g fill="none" stroke="#D9C7A3" stroke-width="5.5" stroke-linecap="butt">
+      <path d="M26.6 82.8A38 38 0 0 1 24.1 24.6"/>
+      <path d="M41.1 13.1A38 38 0 0 1 84.3 36.9"/>
+      <path d="M85.2 59.3A38 38 0 0 1 43.4 87.6"/>
+    </g>
+    <g fill="#D9C7A3">
+      <circle cx="24.1" cy="24.6" r="7"/>
+      <circle cx="84.3" cy="36.9" r="7"/>
+      <circle cx="43.4" cy="87.6" r="7"/>
+    </g>
+    <g fill="none" stroke="#D9C7A3" stroke-linecap="butt" transform="translate(24.7 23.05) scale(0.55)">
       <path d="M40 9V86" stroke-width="11"/>
-      <path d="M25 9h16" stroke-width="8"/>
       <path d="M45.5 14a21 21 0 0 1 0 40" stroke-width="9"/>
       <path d="M21 70h40M21 85h40" stroke-width="8"/>
     </g>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- oPlanejador — versao reduzida do simbolo: so a letra, sem o anel.
+     Para favicon, atalho e qualquer uso abaixo de ~30px, onde o anel do
+     simbolo principal perde definicao. Versao para fundos CLAROS. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="86" viewBox="16 4 56 86" role="img" aria-label="oPlanejador">
+  <g fill="none" stroke="#142D3D" stroke-linecap="butt">
+    <path d="M40 9V86" stroke-width="11"/>
+    <path d="M45.5 14a21 21 0 0 1 0 40" stroke-width="9"/>
+    <path d="M21 70h40M21 85h40" stroke-width="8"/>
+  </g>
+</svg>
