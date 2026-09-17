@@ -139,12 +139,16 @@ p{max-width:var(--largura-texto)}
 
 /* ---------- Abertura ---------- */
 .hero{background:var(--azul);padding:clamp(64px,10vw,124px) 0 clamp(56px,8vw,104px)}
+.hero:has(.hero-foto:not([hidden])) .hero-grade{grid-template-columns:minmax(0,1.1fr) auto}
 .hero h1{max-width:21ch}
 .hero-texto{max-width:60ch;margin-top:22px;font-size:clamp(17px,2vw,20px);color:var(--claro-no-escuro-2)}
 .hero-acoes{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
 .hero-grade{display:grid;gap:clamp(32px,5vw,56px);align-items:center}
-.hero.com-foto .hero-grade{grid-template-columns:1.15fr .85fr}
-.hero-foto img{border-radius:var(--raio);border:1px solid rgba(217,199,163,.3)}
+/* Abertura: texto a esquerda, foto vertical a direita. A foto entra na
+   proporcao original (2:3), sem recorte, com largura limitada. */
+.hero-grade{grid-template-columns:minmax(0,1fr)}
+.hero-foto{justify-self:end;width:100%;max-width:340px}
+.hero-foto img{width:100%;border-radius:var(--raio);border:1px solid rgba(217,199,163,.35)}
 .regua{display:block;width:64px;height:3px;background:var(--areia);border-radius:2px;margin-bottom:28px}
 
 /* ---------- Cartoes ---------- */
@@ -178,19 +182,33 @@ p{max-width:var(--largura-texto)}
   font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
   background:var(--areia);color:var(--azul);border-radius:4px;padding:3px 8px;flex:none;
 }
+.selo-exemplo{background:var(--petroleo);color:var(--claro-no-escuro)}
 .escuro .pendencia{color:var(--claro-no-escuro-2);border-color:rgba(217,199,163,.45)}
+
+/* Lista do que vem dentro de um material */
+.dentro{list-style:none;padding:0;margin:4px 0 0;display:flex;flex-direction:column;gap:9px}
+.dentro li{position:relative;padding-left:18px;font-size:15.5px;line-height:1.55;color:var(--texto-suave)}
+.dentro li::before{
+  content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;
+  border:1.5px solid var(--petroleo);border-radius:50%;
+}
 .cartao-pendente{border-style:dashed;background:transparent}
 .fundo-alt .cartao-pendente{background:transparent}
 .cartao-pendente h3{color:var(--texto-suave)}
 .campo-modelo{font-size:15px;color:var(--texto-suave);max-width:none}
+/* Formato e aula relacionada leem como metadado, nao como texto corrido */
+.cartao .campo-modelo{margin-top:6px;padding-top:13px;border-top:1px solid var(--linha);font-size:14px}
 .campo-modelo b{color:var(--azul);font-weight:700}
 
 /* ---------- Sobre ---------- */
+/* Sobre: retrato pequeno ao lado do texto. A imagem tem 200px de origem,
+   entao e exibida em 140px para continuar nitida. */
 .sobre-grade{
-  display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);
-  gap:clamp(32px,5vw,64px);align-items:start;
+  display:grid;grid-template-columns:auto minmax(0,1fr);
+  gap:clamp(26px,3.5vw,40px);align-items:start;
 }
-.sobre-foto img{border-radius:var(--raio);border:1px solid var(--linha)}
+.sobre-foto{width:140px}
+.sobre-foto img{width:140px;height:140px;border-radius:var(--raio);border:2px solid var(--areia);object-fit:cover}
 .sobre-foto figcaption{font-size:13px;color:var(--texto-suave);margin-top:10px}
 .sobre-texto h2{margin-bottom:20px}
 .sobre-texto p{font-size:18px}
@@ -223,8 +241,11 @@ p{max-width:var(--largura-texto)}
   .grade-4{grid-template-columns:repeat(2,1fr)}
   .grade-3{grid-template-columns:repeat(2,1fr)}
   .sobre-grade{grid-template-columns:1fr}
-  .sobre-foto{max-width:320px}
-  .hero.com-foto .hero-grade{grid-template-columns:1fr}
+  /* Celular: o titulo vem primeiro; a foto da abertura entra depois,
+     menor, para nao empurrar a chamada para fora da primeira tela. */
+  .hero:has(.hero-foto:not([hidden])) .hero-grade{grid-template-columns:minmax(0,1fr)}
+  .hero-foto{justify-self:start;max-width:230px;order:2}
+  .hero-texto-col{order:1}
 }
 @media (max-width:760px){
   :root{--corpo:16px}

@@ -36,18 +36,24 @@ Construção: Marcelo. Aprovação de conteúdo e apresentação: Leonardo.
 | URL do LinkedIn | handle informado, mas a URL do LinkedIn **não é derivável do @** — precisa ser conferida | `config.js` → `expansao.linkedin` |
 | URLs de X e TikTok | handles informados; destinos não validados | `config.js` → `expansao` |
 | E-mail público do projeto | não fornecido | `config.js` → `contato.email` |
-| Foto autorizada de Leonardo | o retrato atual veio de matéria da GPS Brasília e **não tem permissão de uso registrada** | `config.js` → `fotos` |
-| Foto de abertura | não há; a abertura está tipográfica, conforme o briefing | `config.js` → `fotos.hero` |
+| Foto da abertura | em uso: a foto vertical que veio de matéria da GPS Brasília. **Permissão de uso não registrada** e arquivo pesado (ver nota abaixo) | `config.js` → `fotos.hero` |
+| Foto do bloco "Sobre" | em uso: a enviada por Marcelo em 17/09/2026. Tem **200×200 px**, por isso é exibida em 140px; não suporta uso maior. Origem e permissão a registrar | `config.js` → `fotos.retrato` |
 | Biografia revisada | o texto usa o que consta no briefing (15 anos de experiência); nada foi acrescentado | `index.html`, seção "Sobre" |
 | Materiais gratuitos reais | nenhum arquivo existe; os espaços estão marcados como pendentes | `config.js` → `materiais` |
 | Provedor e acesso ao DNS de oplanejador.com | a organizar antes da implantação | deploy |
 | Aprovação de textos e visual | pendente | tudo |
 
-> **Sobre a otimização da foto:** o retrato atual tem 2976×4464 px e 723 KB, mas
-> é exibido em no máximo 364 px de largura. Como ele precisa ser substituído por
-> uma foto autorizada, não vale recomprimir este arquivo — mas a foto definitiva
-> deve chegar já otimizada (algo em torno de 900×1350 px e abaixo de 150 KB).
-> Esta máquina não tem ferramenta de imagem instalada para fazer isso aqui.
+> **Peso da foto da abertura — resolver antes de publicar.** O arquivo tem
+> 2976×4464 px e 723 KB, mas é exibido em 340 px de largura. Desde 17/09/2026 ele
+> está na abertura, ou seja, é a maior imagem da primeira tela e define o tempo de
+> carregamento percebido, principalmente no celular. Reexportar em torno de
+> 900×1350 px e abaixo de 150 KB. Esta máquina não tem ferramenta de imagem
+> instalada, então a conversão precisa ser feita fora dela.
+
+> **Resolução da foto do "Sobre".** A imagem enviada tem 200×200 px, tamanho de
+> foto de perfil. Ela está nítida nos 140 px em que é exibida, mas não serve para
+> uso maior. Se o desejo for uma foto grande em algum bloco, é preciso um arquivo
+> de no mínimo ~1400 px de largura.
 
 ## Verificado na construção
 
@@ -104,8 +110,14 @@ Pontos em que foi preciso interpretar o briefing — vale a revisão de Leonardo
    sem gráfico e sem símbolo de dinheiro, que o briefing exclui. Entregue em
    paths puros (nenhuma fonte instalada é necessária) e editável: para recolorir,
    basta trocar o valor de `stroke`. Testado de 96px a 16px.
-7. **A faixa de aviso de rascunho no topo foi retirada** a pedido, em 16/09/2026.
+7. **Há conteúdo de exemplo na seção de Materiais**, pedido em 17/09/2026 para
+   Leonardo ver a direção editorial. São três materiais propostos, cada um com o
+   problema que resolve, o formato, a aula relacionada e o que teria dentro. Levam
+   selo **Exemplo** e, como não são arquivos reais, não aparecem na versão
+   pública. São ferramentas de trabalho, não relato de experiência: a parte que
+   depende da vivência de Leonardo continua sendo dele.
+8. **A faixa de aviso de rascunho no topo foi retirada** a pedido, em 16/09/2026.
    Os selos "pendente" em cada cartão continuam, assim como o `noindex`.
-8. **Newsletter e grupo de WhatsApp foram retirados.** O formulário era simulado e
+9. **Newsletter e grupo de WhatsApp foram retirados.** O formulário era simulado e
    o briefing pede definir destino e tratamento dos dados antes de ativar
    qualquer formulário; a comunidade aberta não está definida.

@@ -64,7 +64,7 @@
 <!-- ABERTURA -->
 <section class="hero escuro" id="abertura">
   <div class="faixa hero-grade">
-    <div>
+    <div class="hero-texto-col">
       <span class="regua" aria-hidden="true"></span>
       <h1>Conhecimento para construir e desenvolver sua atuação como Financial Advisor.</h1>
       <p class="hero-texto">Aprenda sobre Consultoria Financeira e Patrimonial 360º, desenvolvimento do negócio e qualidade no acompanhamento de clientes, com a experiência de Leonardo Ces.</p>
@@ -73,10 +73,12 @@
         <a class="botao botao-secundario" href="#sobre">Conhecer o projeto</a>
       </div>
     </div>
-    <!-- Foto da abertura: aparece quando OP_CONFIG.fotos.hero
-         for preenchido com uma imagem autorizada de Leonardo. -->
+
+    <!-- Foto da abertura: aparece quando OP_CONFIG.fotos.hero apontar
+         para uma imagem existente e autorizada. Sem lazy: e o elemento
+         maior da primeira tela. -->
     <figure class="hero-foto" id="heroFoto" hidden>
-      <img id="heroFotoImg" src="" alt="" />
+      <img id="heroFotoImg" src="" alt="" width="2976" height="4464" decoding="async" />
     </figure>
   </div>
 </section>
@@ -204,30 +206,48 @@
          assets/config.js, eles substituem estes espaços. No modo
          'publico' sem material real, a seção inteira fica oculta. -->
     <div class="grade grade-3" id="listaMateriais">
-      <article class="cartao cartao-pendente" data-material-modelo>
+      <article class="cartao" data-material-modelo data-so-rascunho>
         <span class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg></span>
-        <h3>Espaço reservado para material</h3>
-        <p class="campo-modelo"><b>Título real</b> do material, o <b>problema</b> que ele ajuda a resolver, o <b>formato</b>, a <b>aula relacionada</b> e o botão “Acessar material”.</p>
+        <h3>Roteiro da primeira conversa com um cliente</h3>
+        <p>Conduzir a reunião inicial ouvindo mais do que apresentando, e sair dela com um diagnóstico em vez de uma proposta apressada.</p>
+        <ul class="dentro">
+          <li>As perguntas de abertura que revelam o contexto antes de chegar nos números</li>
+          <li>O que registrar durante a conversa e o que deixar para depois</li>
+          <li>Como encerrar combinando o próximo passo, sem pedir decisão na hora</li>
+        </ul>
+        <p class="campo-modelo">PDF, 2 páginas · Aula: Como apresentar seu serviço a alguém que já conhece você</p>
         <div class="acao">
-          <p class="pendencia"><span class="selo">Pendente</span> Arquivo ainda não produzido. Acesso direto, sem formulário obrigatório.</p>
+          <p class="pendencia"><span class="selo selo-exemplo">Exemplo</span> Direção editorial proposta. Ainda não é arquivo real, e por isso não aparece na versão pública.</p>
         </div>
       </article>
 
-      <article class="cartao cartao-pendente" data-material-modelo>
+      <article class="cartao" data-material-modelo data-so-rascunho>
         <span class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg></span>
-        <h3>Espaço reservado para material</h3>
-        <p class="campo-modelo">O primeiro material deve ter utilidade prática e estar vinculado a uma aula.</p>
+        <h3>Inventário da sua Zona X</h3>
+        <p>Descobrir com quem você já consegue começar a atender bem hoje, sem depender de uma rede de alta renda.</p>
+        <ul class="dentro">
+          <li>Como listar seus vínculos por proximidade e contexto, não por patrimônio</li>
+          <li>Critérios para separar quem você atende agora de quem vem depois</li>
+          <li>O que a sua capacidade de entrega atual já define sobre o seu público</li>
+        </ul>
+        <p class="campo-modelo">Planilha, 1 aba · Aula: Como escolher o público que seu negócio consegue atender bem</p>
         <div class="acao">
-          <p class="pendencia"><span class="selo">Pendente</span> Arquivo ainda não produzido.</p>
+          <p class="pendencia"><span class="selo selo-exemplo">Exemplo</span> Direção editorial proposta. Ainda não é arquivo real, e por isso não aparece na versão pública.</p>
         </div>
       </article>
 
-      <article class="cartao cartao-pendente" data-material-modelo>
+      <article class="cartao" data-material-modelo data-so-rascunho>
         <span class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg></span>
-        <h3>Espaço reservado para material</h3>
-        <p class="campo-modelo">Nada é prometido aqui antes de existir como arquivo.</p>
+        <h3>Escopo e remuneração em uma página</h3>
+        <p>Explicar o que está incluído no acompanhamento e como você é remunerado, para um cliente acostumado a não ver a cobrança de forma explícita.</p>
+        <ul class="dentro">
+          <li>A descrição do serviço em linguagem de cliente, não de mercado</li>
+          <li>O que entra, o que não entra, e com que frequência</li>
+          <li>Como apresentar a forma de remuneração sem partir de comparação com comissão</li>
+        </ul>
+        <p class="campo-modelo">Modelo editável, 1 página · Aula: Como explicar a cobrança pelo acompanhamento financeiro</p>
         <div class="acao">
-          <p class="pendencia"><span class="selo">Pendente</span> Arquivo ainda não produzido.</p>
+          <p class="pendencia"><span class="selo selo-exemplo">Exemplo</span> Direção editorial proposta. Ainda não é arquivo real, e por isso não aparece na versão pública.</p>
         </div>
       </article>
     </div>
@@ -238,7 +258,7 @@
 <section id="sobre">
   <div class="faixa sobre-grade">
     <figure class="sobre-foto" id="sobreFoto">
-      <img id="sobreFotoImg" src="assets/leonardo.jpg" alt="Leonardo Ces" width="2976" height="4464" loading="lazy" decoding="async" />
+      <img id="sobreFotoImg" src="assets/leonardo-retrato.jpg" alt="Leonardo Ces" width="200" height="200" loading="lazy" decoding="async" />
     </figure>
 
     <div class="sobre-texto">
@@ -246,7 +266,7 @@
       <h2>Experiência prática, compartilhada.</h2>
       <p>Sou Leonardo Ces. Compartilho aprendizados de 15 anos de experiência em planejamento patrimonial e na construção da IBBRA para apoiar a formação e a evolução de Financial Advisors. No oPlanejador, essa experiência se transforma em conteúdo sobre a prática profissional, o desenvolvimento do negócio e o acompanhamento de clientes.</p>
       <p class="pendencia" data-so-rascunho><span class="selo">Pendente</span> Biografia a ser revisada por Leonardo antes da publicação. Certificações, cargos, números de clientes e resultados não foram acrescentados por não constarem nas referências.</p>
-      <p class="pendencia" data-so-rascunho><span class="selo">Pendente</span> Fotografia: origem é matéria da GPS Brasília e a permissão de uso ainda não está registrada. Substituir por foto autorizada.</p>
+      <p class="pendencia" data-so-rascunho><span class="selo">Pendente</span> Fotografias: a da abertura veio de matéria da GPS Brasília, com permissão de uso não registrada. A deste bloco foi enviada em 17/09/2026 e tem 200×200 px, o que serve neste tamanho mas não em uso maior. Registrar origem e permissão das duas.</p>
     </div>
   </div>
 </section>

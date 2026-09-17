@@ -74,12 +74,15 @@
   if (hero && fotos.hero) {
     var heroImg = document.getElementById('heroFotoImg');
     if (heroImg) {
-      heroImg.src = fotos.hero;
+      /* Arquivo ainda nao esta na pasta: mantem a abertura tipografica
+         em vez de mostrar imagem quebrada. */
+      heroImg.addEventListener('error', function () {
+        esconder(hero);
+      });
       heroImg.alt = fotos.heroAlt || 'Leonardo Ces';
+      heroImg.src = fotos.hero;
     }
     mostrar(hero);
-    var secaoHero = document.getElementById('abertura');
-    if (secaoHero) secaoHero.classList.add('com-foto');
   }
 
   var sobreFoto = document.getElementById('sobreFoto');

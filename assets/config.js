@@ -78,11 +78,14 @@ var OP_CONFIG = {
      permissao de uso registradas. Nao usar banco de imagens.
   ------------------------------------------------------------ */
   fotos: {
-    hero: '',
+    /* Foto da abertura (vertical, grande). Enquanto o arquivo nao
+       existir, a abertura fica tipografica, sem imagem quebrada. */
+    hero: 'assets/leonardo.jpg',
     heroAlt: 'Leonardo Ces',
-    retrato: 'assets/leonardo.jpg',
+    heroNota: 'Origem: materia da GPS Brasilia. Permissao de uso nao registrada. 2976x4464 e 723 KB: reexportar em ~900x1350 e abaixo de 150 KB antes de publicar, porque e a maior imagem da primeira tela.',
+    retrato: 'assets/leonardo-retrato.jpg',
     retratoAlt: 'Leonardo Ces',
-    retratoNota: 'Origem: matéria da GPS Brasília. Permissão de uso ainda não registrada; substituir por foto autorizada.'
+    retratoNota: 'Enviada por Marcelo em 17/09/2026. 200x200 px: exibida em 140px por isso. Nao ampliar. Registrar origem e permissao de uso.'
   },
 
   /* --- Materiais gratuitos -----------------------------------
