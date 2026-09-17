@@ -11,10 +11,14 @@
     <text x="88" y="414" font-size="42" font-weight="700">Financial Advisors</text>
   </g>
   <rect x="88" y="240" width="72" height="4" fill="#D9C7A3"/>
-  <g fill="none" stroke="#D9C7A3" stroke-linecap="butt" transform="translate(966 150) scale(1.46)">
-    <circle cx="31" cy="58" r="21" stroke-width="8"/>
-    <path d="M68 17V83" stroke-width="9"/>
-    <path d="M72.5 17a17.5 17.5 0 0 1 0 35" stroke-width="8"/>
+  <g fill="none" stroke="#D9C7A3" stroke-linecap="butt" transform="translate(925 128) scale(1.5)">
+    <circle cx="50" cy="50" r="44" stroke-width="6"/>
+    <g transform="translate(21.5 26) scale(0.58)">
+      <path d="M40 9V86" stroke-width="11"/>
+      <path d="M25 9h16" stroke-width="8"/>
+      <path d="M45.5 14a21 21 0 0 1 0 40" stroke-width="9"/>
+      <path d="M21 70h40M21 85h40" stroke-width="8"/>
+    </g>
   </g>
   <text x="88" y="508" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="3.4" fill="#D9C7A3">COM LEONARDO CES</text>
 </svg>

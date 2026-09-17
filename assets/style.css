@@ -121,7 +121,7 @@ p{max-width:var(--largura-texto)}
 .topo-in{display:flex;align-items:center;gap:20px;min-height:74px}
 .marca{display:flex;align-items:center;gap:13px;text-decoration:none;flex:none;line-height:1.1}
 .marca-txt{display:flex;flex-direction:column}
-.marca-simbolo{width:40px;height:40px;flex:none;color:var(--claro-no-escuro)}
+.marca-simbolo{height:38px;width:auto;flex:none;color:var(--claro-no-escuro)}
 .marca-nome{font-family:var(--fonte-titulo);font-size:23px;font-weight:700;color:var(--claro-no-escuro);letter-spacing:-.01em}
 .marca-assinatura{font-family:var(--fonte-texto);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--areia);margin-top:4px}
 .menu{display:flex;gap:26px;margin-left:auto;align-items:center}

@@ -101,15 +101,29 @@ Pontos em que foi preciso interpretar o briefing — vale a revisão de Leonardo
    curso correspondente.
 5. **O conceito anterior foi arquivado**, não apagado: está em `_arquivo/`, fora do
    deploy, e no histórico do git. Ver `_arquivo/LEIA-ME.md`.
-6. **Foi desenhado um símbolo (monograma oP)** — pedido em 16/09/2026. O briefing
-   diz que a assinatura provisória é "puramente tipográfica" e que não se deve
-   "tratar como logotipo final"; portanto **isto é proposta, não identidade
-   aprovada**, e cabe a Leonardo e ao futuro trabalho de branding decidir. O
-   conceito: o "o" minúsculo seguido do "P" maiúsculo é o traço distintivo da
-   grafia da marca, e o anel carrega a leitura da visão 360º. Sem seta de lucro,
-   sem gráfico e sem símbolo de dinheiro, que o briefing exclui. Entregue em
-   paths puros (nenhuma fonte instalada é necessária) e editável: para recolorir,
-   basta trocar o valor de `stroke`. Testado de 96px a 16px.
+6. **Foi desenhado um símbolo** — pedido em 16/09/2026 e redesenhado em
+   17/09/2026. O briefing diz que a assinatura provisória é "puramente
+   tipográfica" e que não se deve "tratar como logotipo final"; portanto **isto é
+   proposta, não identidade aprovada**, e cabe a Leonardo e ao trabalho de
+   branding decidir.
+
+   A construção atual, escolhida por Marcelo entre várias: um "P" na gramática de
+   um símbolo monetário, cortado por duas barras, como se constroem ₱ e ₽. Haste
+   grossa e bojo mais leve, para ter modulação tipográfica; serifa no topo à
+   esquerda, conversando com a Georgia da assinatura; e as duas barras fazendo
+   também o pé da letra. Uma variante com anel, que carrega a leitura de visão
+   360º, é usada na imagem de compartilhamento, onde há espaço — no favicon ela
+   não serve, porque anel mais letra viram borrão a 16px.
+
+   **Ressalva de conteúdo, registrada de propósito:** o briefing pede para evitar
+   "dinheiro em destaque" nas peças, e o posicionamento do projeto é o oposto de
+   vender produto. Um símbolo monetário no centro da marca vai na direção
+   contrária disso, e foi apontado antes de desenhar. A decisão de seguir assim
+   foi de Marcelo, em 17/09/2026, e permanece aberta à revisão de Leonardo.
+
+   Entregue em paths puros (nenhuma fonte instalada é necessária) e editável:
+   para recolorir, basta trocar o valor de `stroke`. Testado de 92px a 16px, em
+   fundo claro, escuro e areia, e na barra de abas.
 7. **Há conteúdo de exemplo na seção de Materiais**, pedido em 17/09/2026 para
    Leonardo ver a direção editorial. São três materiais propostos, cada um com o
    problema que resolve, o formato, a aula relacionada e o que teria dentro. Levam

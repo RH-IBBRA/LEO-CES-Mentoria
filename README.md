@@ -35,7 +35,7 @@ As pendências e o checklist de aceite estão em [ACEITE.md](ACEITE.md).
 | `assets/app.js` | aplica o `config.js` na página; não guarda conteúdo |
 | `assets/leonardo.jpg` | foto vertical usada na **abertura** |
 | `assets/leonardo-retrato.jpg` | retrato pequeno usado no bloco **Sobre** |
-| `assets/logo-oplanejador.svg` | **símbolo (monograma oP)** em paths puros, para fundos claros |
+| `assets/logo-oplanejador.svg` | **símbolo** em paths puros, para fundos claros |
 | `assets/logo-oplanejador-claro.svg` | o mesmo símbolo para fundos escuros |
 | `assets/favicon.svg` | símbolo em areia sobre quadrado azul, usado como favicon |
 | `assets/og-oplanejador.svg` | desenho da imagem de compartilhamento (falta exportar em PNG) |
