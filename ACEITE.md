@@ -138,6 +138,23 @@ Pontos em que foi preciso interpretar o briefing — vale a revisão de Leonardo
    depende da vivência de Leonardo continua sendo dele.
 8. **A faixa de aviso de rascunho no topo foi retirada** a pedido, em 16/09/2026.
    Os selos "pendente" em cada cartão continuam, assim como o `noindex`.
+9. **A página foi redesenhada em 18/09/2026**, a pedido, para ficar mais
+   interessante. O diagnóstico era de ritmo, não de enfeite: quatro seções
+   seguidas usavam a mesma estrutura de fileira de cartões com ícone, treze ao
+   todo, e depois da abertura escura tudo era claro até o rodapé.
+
+   O que mudou: cada seção passou a ter estrutura própria — "Para quem é" virou
+   tabela editorial sem caixas, "Pilares" foi para fundo escuro em colunas
+   separadas por fio, "Conteúdos" virou linhas de um índice, e "Materiais"
+   manteve cartão, que é a forma certa para um objeto. As seções ganharam
+   numeração de 01 a 06, os treze ícones repetidos saíram, e o símbolo entra como
+   marca d’água discreta em duas seções. Paleta, tipografia e textos do briefing
+   não mudaram.
+
+   Os quatro perfis **não** foram numerados de propósito: o briefing diz que são
+   portas de entrada simultâneas, e numerar sugeriria ordem ou hierarquia entre
+   eles.
+
 9. **Newsletter e grupo de WhatsApp foram retirados.** O formulário era simulado e
    o briefing pede definir destino e tratamento dos dados antes de ativar
    qualquer formulário; a comunidade aberta não está definida.

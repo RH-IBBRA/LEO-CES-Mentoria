@@ -73,7 +73,7 @@ a:hover{color:var(--petroleo-2)}
 }
 
 /* ---------- Estruturas de base ---------- */
-.faixa{max-width:var(--largura);margin:0 auto;padding:0 24px}
+.faixa{max-width:var(--largura);margin:0 auto;padding:0 24px;position:relative;z-index:1}
 section{padding:var(--secao) 0}
 .fundo-alt{background:var(--marfim-2)}
 .escuro{background:var(--azul);color:var(--claro-no-escuro)}
@@ -88,8 +88,14 @@ h3{font-size:clamp(19px,2vw,22px)}
 p{max-width:var(--largura-texto)}
 
 .rotulo{
-  display:block;font-family:var(--fonte-texto);font-size:12px;font-weight:700;
+  display:flex;align-items:baseline;gap:12px;
+  font-family:var(--fonte-texto);font-size:12px;font-weight:700;
   letter-spacing:.18em;text-transform:uppercase;color:var(--petroleo);margin-bottom:14px;
+}
+.rotulo .num{font-family:var(--fonte-titulo);font-size:16px;letter-spacing:.02em;opacity:.8}
+.rotulo .num::after{
+  content:"";display:inline-block;width:24px;height:1px;background:currentColor;
+  vertical-align:middle;margin-left:12px;opacity:.55;
 }
 .escuro .rotulo{color:var(--areia)}
 .abertura-secao{margin-bottom:clamp(32px,4vw,52px)}
@@ -207,8 +213,8 @@ p{max-width:var(--largura-texto)}
   display:grid;grid-template-columns:auto minmax(0,1fr);
   gap:clamp(26px,3.5vw,40px);align-items:start;
 }
-.sobre-foto{width:140px}
-.sobre-foto img{width:140px;height:140px;border-radius:var(--raio);border:2px solid var(--areia);object-fit:cover}
+.sobre-foto{width:160px}
+.sobre-foto img{width:160px;height:160px;border-radius:var(--raio);border:2px solid var(--areia);object-fit:cover}
 .sobre-foto figcaption{font-size:13px;color:var(--texto-suave);margin-top:10px}
 .sobre-texto h2{margin-bottom:20px}
 .sobre-texto p{font-size:18px}
@@ -263,4 +269,69 @@ p{max-width:var(--largura-texto)}
 @media (max-width:560px){
   .grade-4,.grade-3{grid-template-columns:1fr}
   .hero-acoes .botao{width:100%;justify-content:center}
+}
+
+
+/* ============================================================
+   Redesenho: cada secao ganha uma estrutura propria, para a
+   pagina ter ritmo em vez de repetir a mesma fileira de cartoes.
+   ============================================================ */
+
+/* Marca d'agua discreta nas secoes que pedem respiro visual */
+.com-marca{position:relative;overflow:hidden}
+.com-marca::after{
+  content:"";position:absolute;pointer-events:none;
+  width:min(44vw,460px);aspect-ratio:1;right:-6%;bottom:-16%;
+  background:url('logo-oplanejador.svg') center/contain no-repeat;
+  opacity:.05;
+}
+.escuro.com-marca::after{background-image:url('logo-oplanejador-claro.svg');opacity:.08}
+
+/* --- Para quem e: tabela editorial, sem caixas --- */
+.perfis{
+  list-style:none;display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:0 clamp(32px,5vw,76px);
+}
+.perfil{position:relative;padding:32px 0 36px;border-top:1px solid var(--linha)}
+.perfil::before{content:"";position:absolute;top:-1px;left:0;width:34px;height:3px;background:var(--areia)}
+.perfil h3{font-size:clamp(20px,2.3vw,26px);margin-bottom:13px;max-width:22ch}
+.perfil p{color:var(--texto-suave);max-width:46ch}
+
+/* --- Pilares: colunas separadas por fio, sobre fundo escuro --- */
+.pilares{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.pilar{padding:0 clamp(20px,3vw,42px);border-left:1px solid rgba(217,199,163,.28)}
+.pilar:first-child{padding-left:0;border-left:0}
+.pilar:last-child{padding-right:0}
+.pilar-ico{display:block;color:var(--areia);margin-bottom:22px}
+.pilar-ico svg{width:30px;height:30px}
+.pilar h3{font-size:clamp(19px,2vw,23px);margin-bottom:13px}
+.pilar p{color:var(--claro-no-escuro-2);max-width:40ch}
+
+/* --- Conteudos: linhas de um indice, no lugar de cartoes --- */
+.canais{border-top:1px solid var(--linha)}
+.canal{
+  display:grid;grid-template-columns:minmax(170px,.9fr) minmax(0,1.9fr) auto;
+  gap:clamp(18px,3vw,44px);align-items:center;
+  padding:26px 0;border-bottom:1px solid var(--linha);
+}
+.canal-nome{display:flex;align-items:center;gap:14px}
+.canal-ico{color:var(--petroleo);flex:none;display:flex}
+.canal-ico svg{width:26px;height:26px}
+.canal-nome h3{font-size:clamp(21px,2.4vw,28px)}
+.canal-texto{color:var(--texto-suave);max-width:50ch;margin:0;font-size:16px}
+.canal .acao{margin:0;padding:0}
+.canal .pendencia{max-width:300px}
+
+/* --- Responsivo dos blocos novos --- */
+@media (max-width:900px){
+  .pilares{grid-template-columns:1fr}
+  .pilar{padding:26px 0;border-left:0;border-top:1px solid rgba(217,199,163,.28)}
+  .pilar:first-child{padding-top:0;border-top:0}
+  .canal{grid-template-columns:1fr;gap:14px;align-items:start;padding:24px 0}
+  .canal .pendencia{max-width:none}
+}
+@media (max-width:700px){
+  .perfis{grid-template-columns:1fr}
+  .com-marca::after{width:70vw;right:-14%;bottom:-8%}
 }
