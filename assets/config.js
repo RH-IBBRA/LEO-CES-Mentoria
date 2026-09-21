@@ -25,13 +25,17 @@ var OP_CONFIG = {
   canais: {
     youtube: {
       url: 'https://www.youtube.com/@leonardoces',
+      /* Canal validado em 21/09/2026: existe e ja se chama "O Planejador",
+         mas ainda nao tem nenhum video. O briefing so permite botao ativo
+         com conteudo disponivel. Virar para true quando sair a 1a aula. */
       confirmado: false,
-      nota: 'Handle @leonardoces informado em 08/09/2026. Validar o destino e se já existem aulas publicadas.'
+      nota: 'Canal criado e validado, ainda sem vídeos publicados. O botão entra quando sair a primeira aula.'
     },
     instagram: {
       url: 'https://www.instagram.com/leonardoibbra',
-      confirmado: false,
-      nota: 'Perfil atual @leonardoibbra. A padronização do @ é recomendação, não decisão confirmada.'
+      /* Confirmado como definitivo por Marcelo em 21/09/2026; perfil ativo. */
+      confirmado: true,
+      nota: 'Perfil @leonardoibbra, confirmado como definitivo.'
     },
     podcast: {
       url: '',
@@ -44,9 +48,11 @@ var OP_CONFIG = {
   expansao: {
     linkedin: {
       rotulo: 'LinkedIn',
-      url: '',
-      confirmado: false,
-      nota: 'Handle @leonardoces informado, mas a URL do LinkedIn não é derivável do @ — precisa ser conferida.'
+      /* URL fornecida por Marcelo em 21/09/2026. O LinkedIn exige login para
+         exibir perfil, entao nao foi aberto aqui; vale pela fonte direta. */
+      url: 'https://www.linkedin.com/in/leonardoces/',
+      confirmado: true,
+      nota: 'URL fornecida diretamente em 21/09/2026.'
     },
     x: {
       rotulo: 'X',
@@ -68,8 +74,9 @@ var OP_CONFIG = {
      funcao interna, nao atendimento ao publico.
   ------------------------------------------------------------ */
   contato: {
-    email: '',
-    nota: 'E-mail público do projeto ainda não fornecido.'
+    /* Fornecido por Marcelo em 21/09/2026. */
+    email: 'leonardo@ibbra.com.br',
+    nota: 'E-mail público definido.'
   },
 
   /* --- Fotos -------------------------------------------------

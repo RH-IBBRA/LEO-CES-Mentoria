@@ -30,12 +30,12 @@ Construção: Marcelo. Aprovação de conteúdo e apresentação: Leonardo.
 
 | Insumo | Situação | Onde entra |
 | --- | --- | --- |
-| URL do YouTube | handle `@leonardoces` informado; destino não validado, e não se sabe se já há aulas publicadas | `config.js` → `canais.youtube` |
-| URL do Instagram | perfil atual `@leonardoibbra`; padronização do @ é recomendação, não decisão | `config.js` → `canais.instagram` |
+| URL do YouTube | **validada em 21/09/2026**: o canal existe e já se chama "O Planejador", mas **ainda não tem vídeos**. Botão fica desligado até a primeira aula. **Atenção:** a descrição do canal aponta para `instagram.com/leonardoces`, que não existe — trocar por `instagram.com/leonardoibbra` no YouTube Studio | `config.js` → `canais.youtube` |
+| ~~URL do Instagram~~ | **resolvido em 21/09/2026**: `@leonardoibbra` confirmado como definitivo, botão ativo | `config.js` → `canais.instagram` |
 | Endereço do podcast | não existe ainda (previsto a partir da S10) | `config.js` → `canais.podcast` |
-| URL do LinkedIn | handle informado, mas a URL do LinkedIn **não é derivável do @** — precisa ser conferida | `config.js` → `expansao.linkedin` |
+| ~~URL do LinkedIn~~ | **resolvido em 21/09/2026**: `linkedin.com/in/leonardoces/`, fornecida diretamente; no rodapé | `config.js` → `expansao.linkedin` |
 | URLs de X e TikTok | handles informados; destinos não validados | `config.js` → `expansao` |
-| E-mail público do projeto | não fornecido | `config.js` → `contato.email` |
+| ~~E-mail público do projeto~~ | **resolvido em 21/09/2026**: `leonardo@ibbra.com.br` | `config.js` → `contato.email` |
 | Foto da abertura | em uso: a foto vertical que veio de matéria da GPS Brasília. **Permissão de uso não registrada** e arquivo pesado (ver nota abaixo) | `config.js` → `fotos.hero` |
 | Foto do bloco "Sobre" | em uso: a enviada por Marcelo em 17/09/2026. Tem **200×200 px**, por isso é exibida em 140px; não suporta uso maior. Origem e permissão a registrar | `config.js` → `fotos.retrato` |
 | Biografia revisada | o texto usa o que consta no briefing (15 anos de experiência); nada foi acrescentado | `index.html`, seção "Sobre" |
