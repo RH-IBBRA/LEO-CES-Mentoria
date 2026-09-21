@@ -25,11 +25,12 @@ var OP_CONFIG = {
   canais: {
     youtube: {
       url: 'https://www.youtube.com/@leonardoces',
-      /* Canal validado em 21/09/2026: existe e ja se chama "O Planejador",
-         mas ainda nao tem nenhum video. O briefing so permite botao ativo
-         com conteudo disponivel. Virar para true quando sair a 1a aula. */
-      confirmado: false,
-      nota: 'Canal criado e validado, ainda sem vídeos publicados. O botão entra quando sair a primeira aula.'
+      /* Canal validado em 21/09/2026: existe e ja se chama "O Planejador".
+         Ativado por decisao de Marcelo na mesma data, ainda sem videos: o
+         lancamento no YouTube vem depois. (O briefing pedia conteudo
+         disponivel para ativar; a excecao foi decidida conscientemente.) */
+      confirmado: true,
+      nota: 'Canal ativo, com lançamento dos vídeos previsto para depois.'
     },
     instagram: {
       url: 'https://www.instagram.com/leonardoibbra',

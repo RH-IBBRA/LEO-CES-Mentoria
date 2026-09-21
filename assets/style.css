@@ -133,10 +133,10 @@ p{max-width:var(--largura-texto)}
 .menu{display:flex;gap:26px;margin-left:auto;align-items:center}
 .menu a{
   font-size:15px;color:var(--claro-no-escuro);text-decoration:none;
-  padding:6px 0;border-bottom:2px solid transparent;
+  padding:6px 0;border-bottom:2px solid transparent;white-space:nowrap;
 }
 .menu a:hover{color:var(--areia);border-bottom-color:var(--areia)}
-.topo .botao{padding:11px 18px;font-size:15px}
+.topo .botao{padding:11px 18px;font-size:15px;white-space:nowrap}
 .abre-menu{
   display:none;margin-left:auto;background:transparent;border:2px solid rgba(242,239,232,.4);
   color:var(--claro-no-escuro);border-radius:6px;padding:9px 13px;font-size:15px;cursor:pointer;
@@ -253,8 +253,10 @@ p{max-width:var(--largura-texto)}
   .hero-foto{justify-self:start;max-width:230px;order:2}
   .hero-texto-col{order:1}
 }
-@media (max-width:760px){
-  :root{--corpo:16px}
+/* Cabecalho: marca + cinco itens + botao precisam de ~830px numa linha.
+   Abaixo de 900px o menu recolhe; antes disso os itens se espremiam e
+   quebravam em varias linhas ("Para quem e" chegava a tres). */
+@media (max-width:900px){
   .abre-menu{display:block}
   .topo-in{flex-wrap:wrap;gap:12px;padding:14px 24px}
   .menu{
@@ -264,7 +266,13 @@ p{max-width:var(--largura-texto)}
   .menu.aberto{display:flex}
   .menu a{padding:13px 0;border-bottom:1px solid rgba(242,239,232,.12)}
   .menu a:hover{border-bottom-color:rgba(242,239,232,.12)}
-  .topo .botao{order:2;margin-left:auto}
+  /* Com o menu recolhido, o botao do cabecalho quebraria para uma segunda
+     linha e dobraria a altura do cabecalho fixo. A chamada da abertura ja
+     leva ao mesmo lugar, entao aqui ele sai. */
+  .topo .botao{display:none}
+}
+@media (max-width:760px){
+  :root{--corpo:16px}
 }
 @media (max-width:560px){
   .grade-4,.grade-3{grid-template-columns:1fr}

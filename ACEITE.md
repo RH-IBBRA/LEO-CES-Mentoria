@@ -30,7 +30,7 @@ Construção: Marcelo. Aprovação de conteúdo e apresentação: Leonardo.
 
 | Insumo | Situação | Onde entra |
 | --- | --- | --- |
-| URL do YouTube | **validada em 21/09/2026**: o canal existe e já se chama "O Planejador", mas **ainda não tem vídeos**. Botão fica desligado até a primeira aula. **Atenção:** a descrição do canal aponta para `instagram.com/leonardoces`, que não existe — trocar por `instagram.com/leonardoibbra` no YouTube Studio | `config.js` → `canais.youtube` |
+| ~~URL do YouTube~~ | **resolvido em 21/09/2026**: canal validado e **ativado por decisão de Marcelo, ainda sem vídeos** — o lançamento lá vem depois. O briefing pedia conteúdo disponível para ativar; a exceção foi consciente. **Atenção:** a descrição do canal aponta para `instagram.com/leonardoces`, que não existe — trocar por `instagram.com/leonardoibbra` no YouTube Studio | `config.js` → `canais.youtube` |
 | ~~URL do Instagram~~ | **resolvido em 21/09/2026**: `@leonardoibbra` confirmado como definitivo, botão ativo | `config.js` → `canais.instagram` |
 | Endereço do podcast | não existe ainda (previsto a partir da S10) | `config.js` → `canais.podcast` |
 | ~~URL do LinkedIn~~ | **resolvido em 21/09/2026**: `linkedin.com/in/leonardoces/`, fornecida diretamente; no rodapé | `config.js` → `expansao.linkedin` |
