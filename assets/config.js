@@ -89,7 +89,7 @@ var OP_CONFIG = {
        existir, a abertura fica tipografica, sem imagem quebrada. */
     hero: 'assets/leonardo.jpg',
     heroAlt: 'Leonardo Ces',
-    heroNota: 'Origem: materia da GPS Brasilia. Permissao de uso nao registrada. 2976x4464 e 723 KB: reexportar em ~900x1350 e abaixo de 150 KB antes de publicar, porque e a maior imagem da primeira tela.',
+    heroNota: 'Origem: materia da GPS Brasilia. Permissao de uso nao registrada. Otimizada em 21/09/2026: 900x1350, 77 KB (era 2976x4464, 707 KB).',
     retrato: 'assets/leonardo-retrato.jpg',
     retratoAlt: 'Leonardo Ces',
     retratoNota: 'Enviada por Marcelo em 17/09/2026. 200x200 px: exibida em 140px por isso. Nao ampliar. Registrar origem e permissao de uso.'

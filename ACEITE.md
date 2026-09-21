@@ -43,12 +43,21 @@ Construção: Marcelo. Aprovação de conteúdo e apresentação: Leonardo.
 | Provedor e acesso ao DNS de oplanejador.com | a organizar antes da implantação | deploy |
 | Aprovação de textos e visual | pendente | tudo |
 
-> **Peso da foto da abertura — resolver antes de publicar.** O arquivo tem
-> 2976×4464 px e 723 KB, mas é exibido em 340 px de largura. Desde 17/09/2026 ele
-> está na abertura, ou seja, é a maior imagem da primeira tela e define o tempo de
-> carregamento percebido, principalmente no celular. Reexportar em torno de
-> 900×1350 px e abaixo de 150 KB. Esta máquina não tem ferramenta de imagem
-> instalada, então a conversão precisa ser feita fora dela.
+> **~~Peso da foto da abertura~~ — resolvido em 21/09/2026.** Reexportada de
+> 2976×4464 px e 707 KB para 900×1350 px e 77 KB (qualidade 90, sem metadados
+> EXIF), redução de 89%. Continua nítida em tela retina, porque é exibida em no
+> máximo 340 px.
+>
+> **~~Imagem de compartilhamento~~ — resolvido em 21/09/2026.** Gerada em PNG
+> 1200×630 (36 KB) a partir do SVG, e as metatags `og:image` e `twitter:card`
+> estão ativas. Como o endereço precisa ser absoluto, a prévia no WhatsApp e no
+> LinkedIn só aparece depois que `oplanejador.com` estiver no ar.
+>
+> *Correção:* uma versão anterior deste documento dizia que a máquina não tinha
+> ferramenta de imagem e que a conversão teria de ser feita fora dela. Estava
+> incompleto: não havia ferramenta instalada, mas foi possível instalar uma
+> (`sharp`, pelo npm) numa pasta temporária, fora do projeto. Nada dela entrou no
+> repositório além das duas imagens resultantes.
 
 > **Resolução da foto do "Sobre".** A imagem enviada tem 200×200 px, tamanho de
 > foto de perfil. Ela está nítida nos 140 px em que é exibida, mas não serve para

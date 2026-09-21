@@ -39,7 +39,8 @@ As pendências e o checklist de aceite estão em [ACEITE.md](ACEITE.md).
 | `assets/logo-oplanejador-claro.svg` | o mesmo símbolo para fundos escuros |
 | `assets/logo-oplanejador-reduzido.svg` | **versão reduzida** (só a letra), para usos abaixo de ~30px |
 | `assets/favicon.svg` | símbolo em areia sobre quadrado azul, usado como favicon |
-| `assets/og-oplanejador.svg` | desenho da imagem de compartilhamento (falta exportar em PNG) |
+| `assets/og-oplanejador.svg` | desenho-fonte da imagem de compartilhamento (editável) |
+| `assets/og-oplanejador.png` | a imagem de compartilhamento usada pelas redes, 1200×630 |
 | `serve.ps1` | servidor local opcional para preview (não vai para o deploy) |
 | `_arquivo/` | conteúdo do conceito anterior, fora do deploy — ver `_arquivo/LEIA-ME.md` |
 
@@ -70,10 +71,7 @@ Só depois da aprovação de Leonardo (ver [ACEITE.md](ACEITE.md)):
 1. Preencher `assets/config.js` com URLs validadas, e-mail público e materiais reais.
 2. Trocar `modo: 'rascunho'` por `modo: 'publico'` no mesmo arquivo.
 3. Remover a linha `<meta name="robots" content="noindex, nofollow" />` do `index.html`.
-4. Exportar `assets/og-oplanejador.svg` em PNG 1200×630 como
-   `assets/og-oplanejador.png` e descomentar as metatags `og:image` e
-   `twitter:card` no `<head>`.
-5. Testar todos os links, downloads e o contato com destinos reais.
+4. Testar todos os links, downloads e o contato com destinos reais.
 
 ## Deploy
 
